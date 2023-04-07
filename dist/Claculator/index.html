@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="../../../pngs/Favicon.png" />
+
+    <link rel="stylesheet" href="../output.css" />
+    <script src="./script.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+
+    <style>
+      body {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- navigation bar -->
+
+    <nav class="bg-gray-900 text-white fixed w-full z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a
+              href="#"
+              class="font-bold text-2xl ml-12"
+              style="font-family: Pacifico"
+              >Shahood_Chattha</a
+            >
+          </div>
+          <div class="hidden md:flex">
+            <a href="../index.html" class="px-4 hover:bg-gray-800">Home</a>
+            <a href="#about" class="px-4 hover:bg-gray-800">About</a>
+            <a href="#footer" class="px-4 hover:bg-gray-800">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button
+              type="button"
+              class="text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              id="mobile-menu-button"
+            >
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  class="hidden"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+                />
+                <path
+                  class="block"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 3h18v2H3V3zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="md:hidden hidden absolute top-16 w-full bg-gray-800"
+        id="mobile-menu"
+      >
+        <a href="#main" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+        <a href="#about" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="#footer" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+      </div>
+    </nav>
+
+    <!-- navigation bar  -->
+
+    <!-- main page -->
+
+    <section
+      class="bg-cover bg-center relative z-10 w-full h-[100vh] py-20"
+      style="background-image: url(../../../pngs/wall-back.jpg)"
+    >
+      <div
+        class="body absolute left-1/2 top-1/2 bg-gray-800 rounded-md w-[233px] -translate-x-[50%] -translate-y-[50%]"
+      >
+        <div class="title p-2 font-bold text-white text-xl float-left">
+          <span class="ca" style="font-family: Pacifico">C</span
+          ><span class="other">alculator</span>
+        </div>
+        <div class="text-right text-xl">
+          <div
+            class="resultbar text-right w-[220px] h-[28px] bg-white mx-auto overflow-hidden text-black px-1"
+          >
+            0
+          </div>
+        </div>
+        <div class="buttons">
+          <ul class="btns">
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              C
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              /
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              *
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              -
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              7
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              8
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              9
+            </li>
+            <li
+              class="h-[108px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              +
+            </li>
+            <div class="absolute translate-y-[116px]">
+              <li
+                class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+              >
+                4
+              </li>
+              <li
+                class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+              >
+                5
+              </li>
+              <li
+                class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+              >
+                6
+              </li>
+            </div>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              1
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              2
+            </li>
+            <li
+              class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              3
+            </li>
+            <li
+              class="h-[108px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[50px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+            >
+              =
+            </li>
+            <div class="absolute translate-y-[230px]">
+              <li
+                class="h-[50px] bg-gray-900 text-gray-400 border-[2px] m-[4px] w-[166px] text-center flex flex-col justify-center float-left shadow-gray-400 active:translate-y-[2px] rounded-md shadow-md active:shadow"
+              >
+                0
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- main page -->
+
+    <!-- about section -->
+
+    <div
+      id="about"
+      class="about-section relative z-10 left-0 m-0 w- md:w-full bg-gray-700"
+    >
+      <div class="container flex flex-col lg:flex-row">
+        <div
+          class="box lg:block lg:w-[30%] p-4 py-5 w-[90%] mx-auto lg:mx-20 bg-gray-600"
+        >
+          <h2 class="font-bold text-xl">About Me</h2>
+
+          <p class="pl-2">
+            Hi, my name is Shahood Chattha and I am a Full-Stack-Web-Developer.
+            I have 1 years of experience in Web-Developer and I am passionate
+            about Websites.
+          </p>
+
+          <h3 class="font-bold text-lg">Skills</h3>
+
+          <ul class="pl-2">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+
+          <h3 class="font-bold text-lg">Contact Me</h3>
+
+          <p class="pl-2">
+            If you have any questions or would like to work with me, feel free
+            to contact me .
+          </p>
+          <h3 class="font-bold text-lg">My work</h3>
+
+          <p class="pl-2">To See my work click on the photos.</p>
+        </div>
+
+        <!-- projects -->
+        <div class="lg:w-[60%] lg:h-[400px] m-4 mx-auto w-[90%] h-[300px]">
+          <div class="flex">
+            <!-- box left -->
+            <div
+              id="project2"
+              class="relative border-[2px] border-gray-900 w-[280px] opacity-70 shadow-md shadow-black left-[7%] rounded-lg my-auto h-[360px]"
+            >
+              <a
+                href="https://shahood-chattha.github.io/MovieMingle.github.io/"
+                id="box1"
+              >
+                <img
+                  src="../../pngs/movieMingle.png"
+                  class="w-full h-full object-cover"
+                  alt="Image 1"
+                />
+              </a>
+            </div>
+            <!-- box center -->
+            <div
+              id="project2"
+              class="relative border-[2px] border-gray-900 z-50 w-[320px] shadow-2xl shadow-black h-[400px] rounded-lg"
+            >
+              <a href="./index.html" id="box2">
+                <img
+                  src="../../pngs/calculator.png"
+                  class="w-full h-full object-cover"
+                  alt="Image 2"
+                />
+              </a>
+            </div>
+            <!-- box rigth -->
+            <div
+              td="project3"
+              class="relative border-[2px] border-gray-900 w-[280px] right-[7%] opacity-70 shadow-md shadow-black rounded-lg my-auto h-[360px]"
+            >
+              <a href="../8-bit portfolio/index.html" id="box3">
+                <img
+                  src="../../pngs/8-bit.png"
+                  class="w-full h-full object-cover"
+                  alt="Image 3"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- projects -->
+      </div>
+    </div>
+
+    <!-- about section -->
+
+    <!-- footer -->
+
+    <footer id="footer" class="bg-gray-900 z-20 text-white relative py-4">
+      <div
+        class="container mx-auto px-4 flex flex-wrap items-center justify-between"
+      >
+        <div class="w-full md:w-1/3">
+          <h3 class="font-bold text-lg">Shahood Chattha</h3>
+          <p class="mt-2">Web Developer</p>
+          <p class="mt-2 pr-6">
+            I am a web developer with experience in HTML, CSS, Tailwind CSS,
+            JavaScript, and Python. I love creating beautiful and functional
+            websites that make people's lives easier.
+          </p>
+        </div>
+        <div class="w-full md:w-1/3 mt-4 md:mt-0">
+          <h3 class="font-bold text-lg">Contact Me</h3>
+          <ul class="mt-2">
+            <li>Kolo Tarar</li>
+            <li>Hafizabad, Pakistan</li>
+            <li>
+              <a
+                href="mailto:chatthashahood309@gmail.com"
+                class="hover:text-gray-400"
+                >chatthashahood309@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+92 3000379306" class="hover:text-gray-400"
+                >+92 3000379306</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/3 mt-4 md:mt-0">
+          <h3 class="font-bold text-lg">Follow Me</h3>
+          <ul class="mt-2">
+            <li class="mr-4">
+              <a
+                target="_blank"
+                href="https://github.com/Shahood-Chattha"
+                class="hover:text-gray-400"
+                >GitHub</a
+              >
+            </li>
+            <li class="mr-4">
+              <a
+                target="_blank"
+                href="https://twitter.com/ShahoodC"
+                class="hover:text-gray-400"
+                >Twitter</a
+              >
+            </li>
+            <li class="mr-4">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/shahood.shahood.75248/"
+                class="hover:text-gray-400"
+                >Facebook</a
+              >
+            </li>
+            <li class="mr-4">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/shahood_chattha/"
+                class="hover:text-gray-400"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gray-800 h-px w-full mt-4"></div>
+      <div class="container mx-auto px-4 mt-4 text-sm text-gray-500">
+        <p>&copy; 2023 Shahood Chattha. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- footer -->
+
+    <script>
+      // Navigation menu button
+      const menuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      //   projects slide
+      const images = [
+        "../../pngs/movieMingle.png",
+        "../../pngs/calculator.png",
+        "../../pngs/8-bit.png",
+      ];
+      const links = [
+        " https://shahood-chattha.github.io/MovieMingle.github.io/",
+        "./Claculator/index.html",
+        "../8-bit portfolio/index.html",
+      ];
+
+      let index1 = 0;
+      let index2 = 1;
+      let index3 = 2;
+
+      let link1 = 0;
+      let link2 = 1;
+      let link3 = 2;
+
+      function changeImages() {
+        document.querySelector("#box1 img").src = images[index1];
+        document.querySelector("#box2 img").src = images[index2];
+        document.querySelector("#box3 img").src = images[index3];
+
+        index1 = (index1 + 1) % images.length;
+        index2 = (index2 + 1) % images.length;
+        index3 = (index3 + 1) % images.length;
+      }
+
+      setInterval(changeImages, 2000);
+
+      function changelinks() {
+        document.querySelector("#project1 a").href = links[link1];
+        document.querySelector("#project2 a").href = links[link2];
+        document.querySelector("#project3 a").href = links[link2];
+
+        link1 = (link1 + 1) % links.length;
+        link2 = (link2 + 1) % links.length;
+        link3 = (link3 + 1) % links.length;
+      }
+
+      setInterval(changeImages, 2000);
+    </script>
+  </body>
+</html>
